@@ -11,7 +11,7 @@ import SwiftUI
 struct Nervous_RhinoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RecipeCategoryGridView()
         }
     }
 }

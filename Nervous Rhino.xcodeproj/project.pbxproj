@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		E2422910290C37A9003723FC /* Nervous_RhinoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242290F290C37A9003723FC /* Nervous_RhinoApp.swift */; };
-		E2422912290C37A9003723FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2422911290C37A9003723FC /* ContentView.swift */; };
+		E2422912290C37A9003723FC /* RecipesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2422911290C37A9003723FC /* RecipesListView.swift */; };
 		E2422914290C37AA003723FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2422913290C37AA003723FC /* Assets.xcassets */; };
 		E2422917290C37AA003723FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2422916290C37AA003723FC /* Preview Assets.xcassets */; };
+		E2422921290C3A28003723FC /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2422920290C3A28003723FC /* Recipe.swift */; };
+		E2DD4BF7290FF07500110B66 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD4BF6290FF07500110B66 /* AppColor.swift */; };
+		E2DD4C132910327300110B66 /* RecipeCategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD4C122910327300110B66 /* RecipeCategoryGridView.swift */; };
+		E2E0289B290F272B00BEB074 /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E0289A290F272B00BEB074 /* RecipeData.swift */; };
+		E2E0289D290F2AC400BEB074 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E0289C290F2AC400BEB074 /* RecipeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E242290C290C37A9003723FC /* Nervous Rhino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nervous Rhino.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E242290F290C37A9003723FC /* Nervous_RhinoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nervous_RhinoApp.swift; sourceTree = "<group>"; };
-		E2422911290C37A9003723FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E2422911290C37A9003723FC /* RecipesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListView.swift; sourceTree = "<group>"; };
 		E2422913290C37AA003723FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2422916290C37AA003723FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E2422920290C3A28003723FC /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		E2DD4BF6290FF07500110B66 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		E2DD4C122910327300110B66 /* RecipeCategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryGridView.swift; sourceTree = "<group>"; };
+		E2E0289A290F272B00BEB074 /* RecipeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
+		E2E0289C290F2AC400BEB074 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				E242290F290C37A9003723FC /* Nervous_RhinoApp.swift */,
-				E2422911290C37A9003723FC /* ContentView.swift */,
+				E242291D290C39C6003723FC /* Views */,
+				E242291F290C39D4003723FC /* ViewModels */,
+				E242291E290C39CD003723FC /* Models */,
 				E2422913290C37AA003723FC /* Assets.xcassets */,
 				E2422915290C37AA003723FC /* Preview Content */,
 			);
@@ -65,6 +77,33 @@
 				E2422916290C37AA003723FC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E242291D290C39C6003723FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2422911290C37A9003723FC /* RecipesListView.swift */,
+				E2E0289C290F2AC400BEB074 /* RecipeDetailView.swift */,
+				E2DD4C122910327300110B66 /* RecipeCategoryGridView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E242291E290C39CD003723FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2422920290C3A28003723FC /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E242291F290C39D4003723FC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E2E0289A290F272B00BEB074 /* RecipeData.swift */,
+				E2DD4BF6290FF07500110B66 /* AppColor.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2422912290C37A9003723FC /* ContentView.swift in Sources */,
+				E2422921290C3A28003723FC /* Recipe.swift in Sources */,
+				E2E0289D290F2AC400BEB074 /* RecipeDetailView.swift in Sources */,
+				E2DD4C132910327300110B66 /* RecipeCategoryGridView.swift in Sources */,
+				E2E0289B290F272B00BEB074 /* RecipeData.swift in Sources */,
+				E2422912290C37A9003723FC /* RecipesListView.swift in Sources */,
 				E2422910290C37A9003723FC /* Nervous_RhinoApp.swift in Sources */,
+				E2DD4BF7290FF07500110B66 /* AppColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +319,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +349,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
